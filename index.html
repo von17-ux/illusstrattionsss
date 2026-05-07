@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Studio Canvas</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- cute font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+  <div class="card">
+    <h1>🌿 Studio Canvas</h1>
+    <p class="subtitle">soft generative art playground</p>
+
+    <input id="prompt" placeholder="describe a dreamy scene..." />
+
+    <select id="style">
+      <option value="watercolor">Water Garden</option>
+      <option value="sketch">Ink Sketchbook</option>
+      <option value="anime">Studio Glow</option>
+      <option value="cyberpunk">Neon Dream</option>
+    </select>
+
+    <button onclick="generate()">Create ✨</button>
+  </div>
+
+  <canvas id="canvas" width="512" height="512"></canvas>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
